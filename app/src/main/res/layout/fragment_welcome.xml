@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.juanp.walkmehome.fragments.WelcomeFragment">
+
+     <Button
+         android:layout_width="200dp"
+         android:layout_height="80dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentStart="true"
+         android:text="Guardar"
+         android:textColor="#FFFFFFFF"
+         android:textSize="30dp"
+         android:background="@drawable/savebutton"
+         android:id="@+id/saveSettingsButton"
+         />
+
+     <TextView
+         android:id="@+id/tipsafepin"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:text="Tu PIN seguro es aquel que deberas introducir cuando todo vaya bien."/>
+
+     <TextView
+         android:id="@+id/tipunsafepin"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_marginStart="30dp"
+         android:layout_marginEnd="30dp"
+         android:layout_below="@+id/input_pin_safe"
+         android:text="El PIN inseguro es aquel que deberas introducir cuando algo vaya mal. La aplicación aparentará que todo va bien pero de fondo se avisará a tus contactos de confianza"/>
+
+ <android.support.design.widget.TextInputLayout
+     android:id="@+id/input_pin_safe"
+     android:layout_width="match_parent"
+     android:layout_below="@+id/tipsafepin"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="30dp"
+     android:layout_marginEnd="30dp"
+     android:backgroundTint="@android:color/holo_green_light"
+     android:textColor="@android:color/holo_green_light"
+     android:textColorHint="@android:color/holo_green_light"
+     android:textCursorDrawable="@drawable/greencursor">
+      <EditText
+          android:id="@+id/input_pin_safe_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@android:color/holo_green_light"
+          android:hint="Pin seguro"
+          android:textColor="@android:color/holo_green_light"
+          android:textColorHint="@android:color/holo_green_light"
+          android:textCursorDrawable="@drawable/greencursor" />
+ </android.support.design.widget.TextInputLayout>
+
+ <android.support.design.widget.TextInputLayout
+     android:id="@+id/input_pin_risk"
+     android:layout_width="match_parent"
+     android:layout_below="@+id/tipunsafepin"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="30dp"
+     android:layout_marginEnd="30dp"
+     android:backgroundTint="@android:color/holo_red_light"
+     android:textColor="@android:color/holo_red_light"
+     android:textColorHint="@android:color/holo_red_light"
+     android:textCursorDrawable="@null">
+      <EditText
+          android:id="@+id/input_pin_risk_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="@android:color/holo_red_light"
+          android:hint="Pin inseguro"
+          android:textColor="@android:color/holo_red_light"
+          android:textColorHint="@android:color/holo_red_light" />
+ </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
