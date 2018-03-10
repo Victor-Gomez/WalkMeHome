@@ -4,4 +4,4 @@ Nos preocupamos por la seguridad de la mujer en el contexto nocturno de nuestras
 Esta aplicación te lleva por la zona más segura de tu ciudad hasta tu destino. 
 En el caso de que se produzca una incidencia la propia aplicación avisará a tu contacto preferido de tu localización y en caso extremo a la policía.
 
-[WalkMeHome](walkmehome.co.nf "WalkMeHome")
+[WalkMeHome](http://walkmehome.co.nf/ "WalkMeHome")
